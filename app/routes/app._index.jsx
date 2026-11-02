@@ -83,7 +83,7 @@ export const action = async ({ request }) => {
   let written = 0;
 
   // Walk through the whole catalogue, 50 products at a time.
-  // A bulk operation would be faster for very large stores.
+  // A bulk operation would be faster for very large stores
   while (hasNext) {
     const res = await admin.graphql(
       `#graphql
